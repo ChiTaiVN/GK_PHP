@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL; // Bổ sung thư viện này
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function register(): void
+    {
+        //
+    }
+
+    public function boot(): void
+    {
+        // Ép Laravel dùng HTTPS khi truy cập bằng Ngrok
+        if (str_contains(request()->getHost(), 'ngrok-free.dev') || str_contains(request()->getHost(), 'ngrok.app')) {
+            URL::forceScheme('https');
+        }
+    }
+}

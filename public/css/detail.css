@@ -1,0 +1,22 @@
+/* public/css/detail.css */
+.detail-container {
+    display: flex;
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.detail-image { flex: 1; text-align: center; background: var(--bg-color); padding: 40px 20px; border-radius: 10px; }
+.detail-image i { font-size: 10rem; color: #bdc3c7; }
+.detail-info { flex: 2; }
+.detail-title { font-size: 2.5rem; color: var(--primary-color); margin-top: 0; margin-bottom: 10px; }
+.detail-author { font-size: 1.1rem; color: #7f8c8d; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.detail-desc { line-height: 1.8; color: #555; margin-bottom: 30px; }
+.detail-price { font-size: 2rem; color: var(--accent-color); font-weight: bold; margin-bottom: 20px; }
+.stock-status {
+    display: inline-block; padding: 5px 10px; background: #e8f8f5;
+    color: #1abc9c; border-radius: 5px; font-weight: bold; font-size: 0.9rem; margin-bottom: 20px;
+}
